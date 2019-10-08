@@ -44,8 +44,7 @@ export default {
 			},
 			pageRouter: 'images'
 		};
-	},
-	mounted() {}
+	}
 };
 </script>
 

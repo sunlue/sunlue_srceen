@@ -32,8 +32,8 @@ const createWindow = function() {
 		`file://${__dirname}/index.html`
 	if (process.env.NODE_ENV === 'development') {
 		BrowserWindowOption = {
-			width: 1900,
-			height: 1000,
+			width: 1366,
+			height: 768,
 			title: '上略互动触摸屏系统',
 			useContentSize: true,
 		}

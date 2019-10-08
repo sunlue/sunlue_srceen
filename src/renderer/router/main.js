@@ -12,17 +12,38 @@ export default {
 		name: 'intro',
 		component: require('@/view/intro/index').default
 	}, {
-		path: '/gzjq',
-		name: 'gzjq',
+		path: '/perception',
+		name: 'perception',
 		component: require('@/components/parent-view/index').default,
 		children: [{
 			path: 'jingdian',
 			name: 'jingdian',
-			component: require('@/view/gzjq/jingdian/index').default
+			component: require('@/view/perception/jingdian/index').default
 		}, {
 			path: 'media',
 			name: 'media',
-			component: require('@/view/gzjq/media/index').default
+			component: require('@/view/perception/media/index').default
 		}]
+	}, {
+		path: '/tourism',
+		name: 'tourism',
+		component: require('@/components/parent-view/index').default,
+		children: [{
+			path: 'dydl',
+			name: 'dydl',
+			component: require('@/view/tourism/dydl/index').default
+		}, {
+			path: 'tour_guide',
+			name: 'tour_guide',
+			component: require('@/view/tourism/tour_guide/index').default
+		}]
+	}, {
+		path: '/shopping',
+		name: 'shopping',
+		component: require('@/view/shopping/index').default,
+	}, {
+		path: '/recreation',
+		name: 'recreation',
+		component: require('@/view/recreation/index').default,
 	}]
 }

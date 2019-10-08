@@ -1,11 +1,13 @@
 <template>
 	<div class="media-images">
 		<div class="container" ref="container">
-			<waterfall :line-gap="waterfall.gap" :watch="waterfall.items" :align="waterfall.align">
-				<waterfall-slot v-for="(item, index) in waterfall.items" :width="item.width" :height="item.height" :order="index" :key="item.id">
-					<div class="item"><img :src="item.src" /></div>
-				</waterfall-slot>
-			</waterfall>
+			<viewer :images="waterfall.items">
+				<waterfall :line-gap="waterfall.gap" :watch="waterfall.items" :align="waterfall.align">
+					<waterfall-slot v-for="(item, index) in waterfall.items" :width="item.width" :height="item.height" :order="index" :key="item.id">
+						<div class="item"><img :src="item.src" /></div>
+					</waterfall-slot>
+				</waterfall>
+			</viewer>
 		</div>
 	</div>
 </template>
@@ -48,7 +50,7 @@ export default {
 				{
 					image: 'http://39.98.56.58:8080/SunlueCMS/demo/upload/2019-09-26/15694837839032c9a578d6d6c0b01698016d6c85fedf0939.jpg'
 				}
-			]
+			],
 		};
 	},
 	mounted() {
@@ -89,19 +91,18 @@ export default {
 		width: 100%;
 		height: 100%;
 		overflow: hidden;
-	}
-	.item {
-		position: absolute;
-		top: 5px;
-		left: 5px;
-		right: 5px;
-		bottom: 5px;
-		font-size: 1.2em;
-		color: rgb(0, 158, 107);
-
-		img {
-			width: 100%;
-			height: 100%;
+		.item {
+			position: absolute;
+			top: 5px;
+			left: 5px;
+			right: 5px;
+			bottom: 5px;
+			font-size: 1.2em;
+			color: rgb(0, 158, 107);
+			img {
+				width: 100%;
+				height: 100%;
+			}
 		}
 	}
 }

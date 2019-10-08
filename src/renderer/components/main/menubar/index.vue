@@ -8,7 +8,9 @@
 		</div>
 		<div :class="['menu', menu.open ? 'open' : 'close']" tag="menu">
 			<template v-if="menu.type != 'nav'">
-				<div class="icon" v-if="!menu.open" v-on:click="menu.open = true"><img src="./../../../assets/icon/ico_down.png" /></div>
+				<div class="icon" v-if="!menu.open" v-on:click="menu.open = true">
+					<img src="./../../../assets/icon/ico_down.png" />
+				</div>
 				<div class="item" v-else-if="menu.open">
 					<div class="close" v-on:click="menu.open = false"></div>
 					<div class="nav">
@@ -84,20 +86,57 @@ export default {
 						]
 					},
 					{
-						name: '畅行景区', // 游
-						href: ''
+						name: '畅行景区', // 吃、住、行
+						children:[
+							{
+								name: '特色美食',
+								href: 'jingdian',
+								img: 'http://39.98.56.58:8080/SunlueCMS/demo/upload/2019-09-26/15694795300912c9a578d6d6c0b01251016d6c45166b02fb.jpg'
+							},
+							{
+								name: '温馨旅居',
+								href: 'jingdian',
+								img: 'http://39.98.56.58:8080/SunlueCMS/demo/upload/2019-09-26/15694795300912c9a578d6d6c0b01251016d6c45166b02fb.jpg'
+							},
+							{
+								name: '我行我速',
+								href: 'jingdian',
+								img: 'http://39.98.56.58:8080/SunlueCMS/demo/upload/2019-09-26/15694795300912c9a578d6d6c0b01251016d6c45166b02fb.jpg'
+							},
+						]
 					},
 					{
-						name: '智游景区', // 吃、住、行
-						href: ''
+						name: '智游景区', // 游
+						children:[
+							{
+								name: '电子导览',//导游导览
+								href: 'dydl',
+								img: 'http://39.98.56.58:8080/SunlueCMS/demo/upload/2019-09-26/15694795300912c9a578d6d6c0b01251016d6c45166b02fb.jpg'
+							},
+							{
+								name: '智慧导游',//景区导游
+								href: 'tour_guide',
+								img: 'http://39.98.56.58:8080/SunlueCMS/demo/upload/2019-09-26/15694795300912c9a578d6d6c0b01251016d6c45166b02fb.jpg'
+							},
+							{
+								name: '生态景区',//景区环境监测
+								href: 'jingdian',
+								img: 'http://39.98.56.58:8080/SunlueCMS/demo/upload/2019-09-26/15694795300912c9a578d6d6c0b01251016d6c45166b02fb.jpg'
+							},
+							{
+								name: '景区全景',//景区全景
+								href: 'jingdian',
+								img: 'http://39.98.56.58:8080/SunlueCMS/demo/upload/2019-09-26/15694795300912c9a578d6d6c0b01251016d6c45166b02fb.jpg'
+							}
+						]
 					},
 					{
-						name: '景区购物', // 购
-						href: ''
+						name: '景区乐购', // 购
+						href: 'shopping'
 					},
 					{
-						name: '景区娱乐', // 娱
-						href: ''
+						name: '精彩娱乐', // 娱
+						href: 'recreation'
 					}
 				],
 				items: [
