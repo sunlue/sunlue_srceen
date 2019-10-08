@@ -1,28 +1,30 @@
 <template>
 	<div :id="$route.name" class="tour_guide_page scroll y">
 		<banner :items="banner"></banner>
-		<div class="container">
-			<div class="title">
-				<p class="zh">
-					<span class="first">智慧</span>
-					<span class="second">导游</span>
-				</p>
-				<p class="en"><span class="name">wise guide</span></p>
-			</div>
-			<ul class="content">
-				<template v-for="(item, index) in items">
-					<li class="itembox" :key="index">
-						<div class="thumb">
-							<img :src="item.photo" />
-							<div class="name">
-								<span class="surname">{{ item.surname }}</span>
-								<span class="givenname">{{ item.givenname }}</span>
+		<div class="container full">
+			<div class="container">
+				<div class="title">
+					<p class="zh">
+						<span class="first">智慧</span>
+						<span class="second">导游</span>
+					</p>
+					<p class="en"><span class="name">wise guide</span></p>
+				</div>
+				<ul class="content">
+					<template v-for="(item, index) in items">
+						<li class="itembox" :key="index">
+							<div class="thumb">
+								<img :src="item.photo" />
+								<div class="name">
+									<span class="surname">{{ item.surname }}</span>
+									<span class="givenname">{{ item.givenname }}</span>
+								</div>
 							</div>
-						</div>
-						<div class="intro">{{ item.intro }}</div>
-					</li>
-				</template>
-			</ul>
+							<div class="intro">{{ item.intro }}</div>
+						</li>
+					</template>
+				</ul>
+			</div>
 		</div>
 		<bottom></bottom>
 	</div>
@@ -92,6 +94,9 @@ export default {
 
 <style lang="less">
 .tour_guide_page {
+	.container.full{
+		padding-left: 60px;
+	}
 	.title {
 		padding: 60px 0px;
 		.zh {

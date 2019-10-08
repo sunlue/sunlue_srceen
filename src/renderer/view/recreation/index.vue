@@ -1,5 +1,5 @@
 <template>
-	<div :id="$route.name" class="shopping-page scroll y">
+	<div :id="$route.name" class="recreation-page scroll y">
 		<template v-if="intro_bar">
 			<div class="introBar" v-on:click="intro_bar = false"><img src="../../assets/icon/ico_down.png" /></div>
 		</template>
@@ -10,7 +10,6 @@
 				<img src="http://www.djy517.com/sc_djy/images/ylLine/cim02.jpg" />
 				<img src="http://www.djy517.com/sc_djy/images/ylLine/cim03.jpg" />
 				<img src="http://www.djy517.com/sc_djy/images/ylLine/cim04.jpg" />
-				<img src="http://www.djy517.com/sc_djy/images/ylLine/cim05.jpg" />
 				<img src="http://www.djy517.com/sc_djy/images/ylLine/cim06.jpg" />
 				<img src="http://www.djy517.com/sc_djy/images/ylLine/cim07.jpg" />
 				<img src="http://www.djy517.com/sc_djy/images/ylLine/cim08.jpg" />
@@ -26,6 +25,12 @@
 				<img src="http://www.djy517.com/sc_djy/images/ylLine/cim18.jpg" />
 				<img src="http://www.djy517.com/sc_djy/images/ylLine/cim19.jpg" />
 				<img src="http://www.djy517.com/sc_djy/images/ylLine/cim20.jpg" />
+				<img src="http://www.djy517.com/sc_djy/images/ylLine/cim21.jpg" />
+				<img src="http://www.djy517.com/sc_djy/images/ylLine/cim22.jpg" />
+				<img src="http://www.djy517.com/sc_djy/images/ylLine/cim23.jpg" />
+				<img src="http://www.djy517.com/sc_djy/images/ylLine/cim24.jpg" />
+				<img src="http://www.djy517.com/sc_djy/images/ylLine/cim25.jpg" />
+				<img src="http://www.djy517.com/sc_djy/images/ylLine/cim26.jpg" />
 			</div>
 		</div>
 		<banner :items="banner_items"></banner>
@@ -113,7 +118,7 @@ export default {
 </script>
 
 <style lang="less">
-.shopping-page {
+.recreation-page {
 	position: relative;
 	.introBar {
 		position: fixed;

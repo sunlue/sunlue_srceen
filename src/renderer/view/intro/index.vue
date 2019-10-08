@@ -1,7 +1,9 @@
 <template>
 	<div class="intro-page">
 		<banner :items="items"></banner>
-		<div class="content" v-html="content"></div>
+		<div class="container full">
+			<div class="container content" v-html="content"></div>
+		</div>
 		<bottom></bottom>
 	</div>
 </template>
@@ -51,20 +53,23 @@ export default {
 	width: 100%;
 	height: 100%;
 	overflow-y: auto;
-	.content {
-		width: 1200px;
-		margin: 40px auto 0px;
-		font-size: 16px;
-		color: #333333;
-		min-height: 500px;
-		p {
-			font-size: 20px;
-			line-height: 150%;
-			margin-bottom: 16px;
-			font-family: '华文楷体';
-		}
-		img {
-			max-width: 100%;
+	.container.full{
+		padding-left: 60px;
+		box-sizing: border-box;
+		.content {
+			margin: 40px auto 0px !important;
+			font-size: 16px;
+			color: #333333;
+			min-height: 500px;
+			p {
+				font-size: 20px;
+				line-height: 150%;
+				margin-bottom: 16px;
+				font-family: '华文楷体';
+			}
+			img {
+				max-width: 100%;
+			}
 		}
 	}
 }
