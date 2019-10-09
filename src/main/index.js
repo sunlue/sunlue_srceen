@@ -28,17 +28,19 @@ if (process.env.NODE_ENV !== 'development') {
  */
 let mainWindow
 const createWindow = function() {
-	let BrowserWindowOption = {}
+	let BrowserWindowOption = {
+		webPreferences:{
+			nodeIntegration:true
+		}
+	}
 	let winURL = process.env.NODE_ENV === 'development' ?
 		`http://localhost:9080` :
 		`file://${__dirname}/index.html`
 	if (process.env.NODE_ENV === 'development') {
-		BrowserWindowOption = {
-			width: 1366,
-			height: 768,
-			title: '上略互动触摸屏系统',
-			useContentSize: true,
-		}
+		BrowserWindowOption['width'] = 1366
+		BrowserWindowOption['height'] = 768
+		BrowserWindowOption['title'] = '上略互动触摸屏系统'
+		BrowserWindowOption['useContentSize'] = true
 	} else {
 		BrowserWindowOption['resizable'] = false
 		BrowserWindowOption['movable'] = false
