@@ -42,6 +42,10 @@ Viewer.setDefaults({
 	}
 })
 
+//图表插件
+import ECharts from 'vue-echarts'
+Vue.component('v-chart', ECharts)
+
 if (!process.env.IS_WEB) Vue.use(require('vue-electron'))
 Vue.http = Vue.prototype.$http = axios
 Vue.config.productionTip = false

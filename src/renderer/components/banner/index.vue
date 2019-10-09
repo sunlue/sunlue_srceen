@@ -18,12 +18,16 @@
 				<img :src="items.background.src" :alt="items.background.alt" />
 			</template>
 			<div class="box">
-				<div class="title">
+				<div class="title" v-if="items.title_en">
 					<div class="big">{{ items.title[0] }}</div>
 					<div class="small">
 						<span>{{ items.title[1] }}</span>
 						<span>{{ items.title_en }}</span>
 					</div>
+				</div>
+				<div class="title" v-else>
+					<div class="first">{{ items.title[0] }}</div>
+					<div class="second">{{ items.title[1] }}</div>
 				</div>
 				<div class="describe">{{ items.describe }}</div>
 			</div>
@@ -138,6 +142,18 @@ export default {
 							line-height: 1em;
 						}
 					}
+				}
+				.first{
+					font-size: 60px;
+					color: #FFFFFF;
+					font-weight: 600;
+					line-height: 60px;
+				}
+				.second{
+					font-size: 60px;
+					color: #b20000;
+					font-weight: 600;
+					line-height: 60px;
 				}
 			}
 			.describe {

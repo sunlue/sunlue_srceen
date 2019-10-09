@@ -16,8 +16,7 @@
 							<div class="thumb">
 								<img :src="item.photo" />
 								<div class="name">
-									<span class="surname">{{ item.surname }}</span>
-									<span class="givenname">{{ item.givenname }}</span>
+									{{ item.name }}
 								</div>
 							</div>
 							<div class="intro">{{ item.intro }}</div>
@@ -56,14 +55,12 @@ export default {
 			},
 			items: [
 				{
-					surname: '热合曼',
-					givenname: '尼格买提',
+					name: '热合曼·尼格买提',
 					photo: 'https://ss2.baidu.com/6ONYsjip0QIZ8tyhnq/it/u=3668515757,3073835190&fm=179&app=42&f=JPEG?w=121&h=140',
 					intro: '尼格买提·热合曼，维吾尔族，毕业于中国传媒大学，1983年4月17日出生于新疆维吾尔自治区乌鲁木齐市。中国中' + '央电视台综艺频道节目主持人。'
 				},
 				{
-					surname: '马',
-					givenname: '云',
+					name: '马云',
 					photo: 'https://gss0.bdstatic.com/-4o3dSag_xI4khGkpoWK1HF6hhy/baike/w%3D268%3Bg%3D0/sign=0003b03088b1cb133e693b15e56f3173/0bd162d9f2d3572c257447038f13632763d0c35f.jpg',
 					intro:
 						'马云，男，汉族，中共党员 [1]  ，1964年9月10日生于浙江省杭州市，祖籍浙江省嵊州市谷来镇， 阿里巴巴' +
@@ -71,20 +68,29 @@ export default {
 						'科学突破奖基金会董事、联合国数字合作高级别小组联合主席'
 				},
 				{
-					surname: '王',
-					givenname: '健林',
+					name: '王健林',
 					photo: 'https://gss1.bdstatic.com/-vo3dSag_xI4khGkpoWK1HF6hhy/baike/w%3D268%3Bg%3D0/sign=b6559c7f831001e94e3c130980351cd1/cefc1e178a82b9015f0916a57d8da9773812ef84.jpg',
-					intro:
-						'王健林，男。1954年10月24日生于四川省广元市苍溪县，1989年起担任大连万达集团股份有限公司董事长。'
+					intro: '王健林，男。1954年10月24日生于四川省广元市苍溪县，1989年起担任大连万达集团股份有限公司董事长。'
 				},
 				{
-					surname: '张',
-					givenname: '一山',
-					photo: 'https://ss0.baidu.com/6ONWsjip0QIZ8tyhnq/it/u=1747388073,2943376252&fm=179&app=42&f=JPEG?w=414&h=615',
+					name: '雷军',
+					photo: 'https://gss0.bdstatic.com/-4o3dSag_xI4khGkpoWK1HF6hhy/baike/w%3D268%3Bg%3D0/sign=fc41e5c2a04bd11304cdb0346294c332/30adcbef76094b36987b1a5caecc7cd98c109d91.jpg',
 					intro:
-						'张一山，1992年5月5日出生于北京市西城区，毕业于北京电影学院，中国内地男演员。2000年，张一山开'+
-						'始拍摄广告片，后被导演徐耿相中，出演首部电视剧作品《小兵张嘎》。2004年，因在少儿题材的情景喜剧'+
-						'《家有儿女》中饰演刘星后而被观众们熟知。2007年，获得腾讯星光大典年度潜力演艺新人奖'
+						'雷军作为中国互联网代表人物及全球年度电子商务创新领袖人物，曾获中国经济年度人物及十大财智' +
+						'领袖人物、中国互联网年度人物等多项国内外荣誉，并当选《福布斯》（亚洲版）2014年度商' +
+						'业人物。同时兼任金山、YY、猎豹移动等三家上市公司董事长。雷军曾任两届海淀区政协委员，2012' +
+						'年当选北京市人大代表，2013年2月当选全国人民代表大会代表。2017年12月，荣获2017“质量之光”年' +
+						'度质量人物奖'
+				},
+				{
+					name: '史蒂夫·乔布斯',
+					photo: 'https://gss2.bdstatic.com/-fo3dSag_xI4khGkpoWK1HF6hhy/baike/c0%3Dbaike80%2C5%2C5%2C80%2C26/sign=f6be7801b3315c60579863bdecd8a076/b8014a90f603738dbf37d836bc1bb051f819eca1.jpg',
+					intro:
+						'雷军作为中国互联网代表人物及全球年度电子商务创新领袖人物，曾获中国经济年度人物及十大财智' +
+						'领袖人物、中国互联网年度人物等多项国内外荣誉，并当选《福布斯》（亚洲版）2014年度商' +
+						'业人物。同时兼任金山、YY、猎豹移动等三家上市公司董事长。雷军曾任两届海淀区政协委员，2012' +
+						'年当选北京市人大代表，2013年2月当选全国人民代表大会代表。2017年12月，荣获2017“质量之光”年' +
+						'度质量人物奖'
 				}
 			],
 		};
@@ -94,9 +100,6 @@ export default {
 
 <style lang="less">
 .tour_guide_page {
-	.container.full{
-		padding-left: 60px;
-	}
 	.title {
 		padding: 60px 0px;
 		.zh {
@@ -166,32 +169,15 @@ export default {
 				}
 				.name {
 					position: absolute;
-					top: 50%;
+					bottom: 0px;
 					display: block;
-					transform: translateY(-50%);
-					width: 90%;
+					width: 100%;
+					background-color: rgba(0, 0, 0, 0.5);
 					text-align: center;
-					span {
-						color: white;
-						display: block;
-						&.surname {
-							font-family: '隶书';
-							vertical-align: top;
-							font-size: 66px;
-						}
-						&.givenname {
-							padding-left: 66px;
-							font-family: '楷体';
-							font-size: 48px;
-							&:before {
-								content: '';
-								display: inline-block;
-								width: 1px;
-								height: 86px;
-								background: white;
-							}
-						}
-					}
+					padding: 8px 0px;
+					font-size: 26px;
+					font-family: '楷体';
+					color: white;
 				}
 			}
 			&:hover {

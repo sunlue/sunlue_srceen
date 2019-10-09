@@ -38,7 +38,7 @@ export default {
 				height: 520,
 				resizable: false,
 				windowConfig: {
-					router: '/setting',
+					router: '/modal/setting',
 					name: 'setting',
 					data: { title: '设置' }
 				}

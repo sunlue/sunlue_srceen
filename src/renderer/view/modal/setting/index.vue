@@ -168,6 +168,9 @@ export default {
 				that.autoStart = state;
 			});
 		});
+		electron.ipcRenderer.on('updateMessage', function(event, state) {
+			console.log(state)
+		});
 		electron.ipcRenderer.send('checkAutoStart');
 	},
 	methods: {
@@ -182,7 +185,7 @@ export default {
 			}
 		},
 		update: function() {
-			console.log('update');
+			electron.ipcRenderer.send('checkUpdate');
 		}
 	}
 };

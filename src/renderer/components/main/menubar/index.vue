@@ -71,17 +71,17 @@ export default {
 							{
 								name: '阅览盛景',
 								href: 'jingdian',
-								img: 'http://39.98.56.58:8080/SunlueCMS/demo/upload/2019-09-26/15694795300912c9a578d6d6c0b01251016d6c45166b02fb.jpg'
+								img: require('../../../assets/menu/阅览盛景.jpg')
 							},
 							{
 								name: '行摄掠影',
 								href: 'media',
-								img: 'http://39.98.56.58:8080/SunlueCMS/demo/upload/2019-09-26/15694795300912c9a578d6d6c0b01251016d6c45166b02fb.jpg'
+								img: require('../../../assets/menu/行摄掠影.jpg')
 							},
 							{
 								name: '特色活动',
-								href: 'yinxiang',
-								img: 'http://39.98.56.58:8080/SunlueCMS/demo/upload/2019-09-26/15694795300912c9a578d6d6c0b01251016d6c45166b02fb.jpg'
+								href: 'activity',
+								img: require('../../../assets/menu/特色活动.jpg')
 							}
 						]
 					},
@@ -90,18 +90,18 @@ export default {
 						children:[
 							{
 								name: '特色美食',
-								href: 'jingdian',
-								img: 'http://39.98.56.58:8080/SunlueCMS/demo/upload/2019-09-26/15694795300912c9a578d6d6c0b01251016d6c45166b02fb.jpg'
+								href: 'food',
+								img: require('../../../assets/menu/特色美食.jpg')
 							},
 							{
 								name: '温馨旅居',
-								href: 'jingdian',
-								img: 'http://39.98.56.58:8080/SunlueCMS/demo/upload/2019-09-26/15694795300912c9a578d6d6c0b01251016d6c45166b02fb.jpg'
+								href: 'hotel',
+								img: require('../../../assets/menu/温馨旅居.jpg')
 							},
 							{
 								name: '我行我速',
-								href: 'jingdian',
-								img: 'http://39.98.56.58:8080/SunlueCMS/demo/upload/2019-09-26/15694795300912c9a578d6d6c0b01251016d6c45166b02fb.jpg'
+								href: 'traffic',
+								img: require('../../../assets/menu/我行我速.jpg')
 							},
 						]
 					},
@@ -111,22 +111,22 @@ export default {
 							{
 								name: '电子导览',//导游导览
 								href: 'dydl',
-								img: 'http://39.98.56.58:8080/SunlueCMS/demo/upload/2019-09-26/15694795300912c9a578d6d6c0b01251016d6c45166b02fb.jpg'
+								img: require('../../../assets/menu/电子导览.jpg')
 							},
 							{
 								name: '智慧导游',//景区导游
 								href: 'tour_guide',
-								img: 'http://39.98.56.58:8080/SunlueCMS/demo/upload/2019-09-26/15694795300912c9a578d6d6c0b01251016d6c45166b02fb.jpg'
+								img: require('../../../assets/menu/智慧导游.jpg')
 							},
 							{
 								name: '生态景区',//景区环境监测
-								href: 'jingdian',
-								img: 'http://39.98.56.58:8080/SunlueCMS/demo/upload/2019-09-26/15694795300912c9a578d6d6c0b01251016d6c45166b02fb.jpg'
+								href: 'ecological',
+								img: require('../../../assets/menu/生态景区.jpg')
 							},
 							{
 								name: '景区全景',//景区全景
-								href: 'jingdian',
-								img: 'http://39.98.56.58:8080/SunlueCMS/demo/upload/2019-09-26/15694795300912c9a578d6d6c0b01251016d6c45166b02fb.jpg'
+								href: 'panorama',
+								img: require('../../../assets/menu/景区全景.jpg')
 							}
 						]
 					},

@@ -11,6 +11,8 @@ import {
 	globalShortcut
 } from 'electron'
 
+import '../renderer/store'
+
 import pkg from '../../package.json'
 
 /**
@@ -114,6 +116,68 @@ const ipcAutoStart = function() {
 		})
 	})
 }
+import {
+	autoUpdater
+} from 'electron-updater'
+const ipcAppUpdate=function(){
+	let message = {
+		error: '检查更新出错',
+		checking: '正在检查更新……',
+		updateAva: '检测到新版本，正在下载……',
+		updateNotAva: '现在使用的就是最新版本，不用更新',
+	};
+	
+	const uploadUrl = pkg.build.publish[0]['url']; // 下载地址，不加后面的**.exe
+	autoUpdater.setFeedURL(uploadUrl);
+	
+	//当更新发生错误的时候触发
+	autoUpdater.on('error', function(error) {
+		console.log('更新错误');
+		mainWindow.webContents.send('updateMessage', message.error)
+	});
+	
+	//当开始检查更新的时候触发
+	autoUpdater.on('checking-for-update', function() {
+		console.log('更新错误');
+		mainWindow.webContents.send('updateMessage', message.checking)
+	});
+	
+	//当发现一个可用更新的时候触发，更新包下载会自动开始。
+	autoUpdater.on('update-available', function(info) {
+		console.log('发现更新');
+		mainWindow.webContents.send('updateMessage', message.updateAva)
+	});
+	
+	//当没有可用更新的时候触发
+	autoUpdater.on('update-not-available', function(info) {
+		console.log('没有更新');
+		mainWindow.webContents.send('updateMessage', message.updateNotAva)
+	});
+	
+	// 更新下载进度事件
+	autoUpdater.on('download-progress', function(progressObj) {
+		mainWindow.webContents.send('downloadProgress', progressObj)
+	})
+	
+	//更新下载完成
+	autoUpdater.on('update-downloaded', function(event, releaseNotes, releaseName, releaseDate, updateUrl, quitAndUpdate) {
+		ipcMain.on('isUpdateNow', (e, arg) => {
+			console.log(arguments);
+			console.log("开始更新");
+			//some code here to handle event
+			autoUpdater.quitAndInstall();
+		});
+	
+		mainWindow.webContents.send('isUpdateNow')
+	});
+	
+	ipcMain.on('checkUpdate',function(event, arg){
+		console.log("更新检查");
+		//执行自动更新检查
+		autoUpdater.checkForUpdates();
+	})
+}
+
 /**
  * 快捷键注册
  */
@@ -144,8 +208,9 @@ const createShortcut = function() {
 app.on('ready', () => {
 	createWindow()
 	createTray()
-	ipcAutoStart()
 	createShortcut()
+	ipcAutoStart()
+	ipcAppUpdate()
 })
 
 app.on('window-all-closed', () => {
@@ -172,14 +237,16 @@ app.on('activate', () => {
  * https://simulatedgreg.gitbooks.io/electron-vue/content/en/using-electron-builder.html#auto-updating
  */
 
-/*
-import { autoUpdater } from 'electron-updater'
 
-autoUpdater.on('update-downloaded', () => {
-  autoUpdater.quitAndInstall()
-})
+// import {
+// 	autoUpdater
+// } from 'electron-updater'
 
-app.on('ready', () => {
-  if (process.env.NODE_ENV === 'production') autoUpdater.checkForUpdates()
-})
- */
+// autoUpdater.on('update-downloaded', () => {
+// 	autoUpdater.quitAndInstall()
+// })
+
+// app.on('ready', () => {
+// 	if (process.env.NODE_ENV === 'production') autoUpdater.checkForUpdates()
+// })
+
