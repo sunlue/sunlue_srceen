@@ -30,25 +30,25 @@ export default {
 			},
 			items: [
 				{
-					image: 'http://39.98.56.58:8080/SunlueCMS/demo/upload/2019-09-26/15694825342162c9a578d6d6c0b01665016d6c72ed4806ee.jpg'
+					image: 'http://39.98.56.58:8080/demo/upload/2019-09-26/15694825342162c9a578d6d6c0b01665016d6c72ed4806ee.jpg'
 				},
 				{
-					image: 'http://39.98.56.58:8080/SunlueCMS/demo/upload/2019-09-26/15694813404032c9a578d6d6c0b01310016d6c60b5f305ba.jpg'
+					image: 'http://39.98.56.58:8080/demo/upload/2019-09-26/15694813404032c9a578d6d6c0b01310016d6c60b5f305ba.jpg'
 				},
 				{
-					image: 'http://39.98.56.58:8080/SunlueCMS/demo/upload/2019-09-26/15694909758252c9a578d6d6c0b01900016d6cf3bc5113b8.jpg'
+					image: 'http://39.98.56.58:8080/demo/upload/2019-09-26/15694909758252c9a578d6d6c0b01900016d6cf3bc5113b8.jpg'
 				},
 				{
-					image: 'http://39.98.56.58:8080/SunlueCMS/demo/upload/2019-09-26/15694908486222c9a578d6d6c0b01429016d6cf1cb6e138e.jpg'
+					image: 'http://39.98.56.58:8080/demo/upload/2019-09-26/15694908486222c9a578d6d6c0b01429016d6cf1cb6e138e.jpg'
 				},
 				{
-					image: 'http://39.98.56.58:8080/SunlueCMS/demo/upload/2019-09-26/15694841961062c9a578d6d6c0b01998016d6c8c490a0996.png'
+					image: 'http://39.98.56.58:8080/demo/upload/2019-09-26/15694841961062c9a578d6d6c0b01998016d6c8c490a0996.png'
 				},
 				{
-					image: 'http://39.98.56.58:8080/SunlueCMS/demo/upload/2019-09-26/15694840564032c9a578d6d6c0b01121016d6c8a2753097e.png'
+					image: 'http://39.98.56.58:8080/demo/upload/2019-09-26/15694840564032c9a578d6d6c0b01121016d6c8a2753097e.png'
 				},
 				{
-					image: 'http://39.98.56.58:8080/SunlueCMS/demo/upload/2019-09-26/15694837839032c9a578d6d6c0b01698016d6c85fedf0939.jpg'
+					image: 'http://39.98.56.58:8080/demo/upload/2019-09-26/15694837839032c9a578d6d6c0b01698016d6c85fedf0939.jpg'
 				}
 			],
 		};

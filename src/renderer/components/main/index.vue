@@ -24,7 +24,7 @@ export default {
 	}
 /*定义滚动条高宽及背景 高宽分别对应横竖滚动条的尺寸*/
 ::-webkit-scrollbar {
-	width: 2px; /*滚动条宽度*/
+	width: 0px; /*滚动条宽度*/
 	/*height: 2px;  !*滚动条高度*!*/
 }
 
@@ -42,3 +42,4 @@ export default {
 	/*background-color: green;  !*滚动条的背景颜色*!*/
 }
 </style>
+

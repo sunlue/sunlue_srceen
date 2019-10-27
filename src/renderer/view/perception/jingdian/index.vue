@@ -41,7 +41,7 @@ export default {
 	data() {
 		return {
 			banner_items: {
-				background: 'http://39.98.56.58:8080/SunlueCMS/demo/upload/2019-09-26/15694873365592c9a578d6d6c0b0157016d6cbc346f0e37.jpg',
+				background: 'http://39.98.56.58:8080/demo/upload/2019-09-26/15694873365592c9a578d6d6c0b0157016d6cbc346f0e37.jpg',
 				title: ['悦览', '盛景'],
 				title_en: 'Scenic spots',
 				describe: '大文豪苏东坡的故乡，山川秀美、风光旖旎，位于大峨眉旅游圈内，是最佳生态康养旅游目的地'
@@ -49,7 +49,7 @@ export default {
 			box_items: [
 				{
 					name: '中岩景区',
-					img: 'http://39.98.56.58:8080/SunlueCMS/demo/upload/2019-09-26/15694859224502c9a578d6d6c0b01371016d6ca6a0920c06.png',
+					img: 'http://39.98.56.58:8080/demo/upload/2019-09-26/15694859224502c9a578d6d6c0b01371016d6ca6a0920c06.png',
 					intro:
 						'​国家AA级旅游景区，位于四川省眉山市青神县，北距成都125公里，被誉为“西川林泉最佳处”和“川南第一山”，' +
 						'这里是北宋大文豪苏东坡年少求学之地，也是苏东坡与发妻王弗初恋的地方，“唤鱼联姻”成就一段佳话。有唤鱼池、' +
@@ -57,7 +57,7 @@ export default {
 				},
 				{
 					name: '柳江古镇',
-					img: 'http://39.98.56.58:8080/SunlueCMS/demo/upload/2019-09-26/15694855838092c9a578d6d6c0b01112016d6ca175c10b79.png',
+					img: 'http://39.98.56.58:8080/demo/upload/2019-09-26/15694855838092c9a578d6d6c0b01112016d6ca175c10b79.png',
 					intro:
 						'国家AAAA级旅游景区，四川省文化旅游特色小镇，入选“四川100个最美观景拍摄点”，' +
 						'位于四川省眉山市洪雅县，距成都150公里、瓦屋山50公里、峨眉山36公里，始建于南宋' +

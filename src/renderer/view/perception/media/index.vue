@@ -37,7 +37,7 @@ export default {
 	data() {
 		return {
 			banner_items: {
-				background: 'http://39.98.56.58:8080/SunlueCMS/demo/upload/2019-09-26/15694873365592c9a578d6d6c0b0157016d6cbc346f0e37.jpg',
+				background: 'http://39.98.56.58:8080/demo/upload/2019-09-26/15694873365592c9a578d6d6c0b0157016d6cbc346f0e37.jpg',
 				title: ['行摄', '掠影'],
 				title_en: 'PERCEPTION MEISHAN',
 				describe: '大文豪苏东坡的故乡，山川秀美、风光旖旎，位于大峨眉旅游圈内，是最佳生态康养旅游目的地'

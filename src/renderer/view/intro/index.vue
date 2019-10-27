@@ -1,5 +1,5 @@
 <template>
-	<div class="intro-page">
+	<div :id="$route.name" class="intro-page scroll y">
 		<banner :items="items"></banner>
 		<div class="container full">
 			<div class="container content" v-html="content"></div>
@@ -21,7 +21,7 @@ export default {
 		return {
 			items: {
 				background: {
-					src: 'http://39.98.56.58:8080/SunlueCMS/demo/template/images/perceptionBannerBg.jpg',
+					src: 'http://39.98.56.58:8080/demo/template/images/perceptionBannerBg.jpg',
 					alt: ''
 				},
 				title: ['景区', '概况'],
@@ -50,9 +50,6 @@ export default {
 
 <style lang="less">
 .intro-page {
-	width: 100%;
-	height: 100%;
-	overflow-y: auto;
 	.container.full{
 		padding-left: 60px;
 		box-sizing: border-box;

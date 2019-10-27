@@ -1,7 +1,9 @@
 <template>
 	<div :id="$route.name" class="panorama_page scroll y">
+		<div class="banner">
+			<iframe src="http://720.cdn.geeker.com.cn/upload/file/2018/10/99/vtour/tour.html" frameborder="0"></iframe>
+		</div>
 		<div class="container full">
-			<div class="banner"><iframe src="http://720.cdn.geeker.com.cn/upload/file/2018/10/99/vtour/tour.html" frameborder="0"></iframe></div>
 			<div class="container">
 				<div class="title">
 					<p class="zh">
@@ -92,26 +94,26 @@ export default {
 <style lang="less">
 .panorama_page {
 	background: #f5f5f5;
-	.container.full {
-		.banner {
-			width: 100vw;
-			height: 680px;
-			position: relative;
-			iframe {
-				width: 100%;
-				height: 100%;
-				border: none;
-			}
-			&:after {
-				content: '';
-				display: block;
-				width: 100%;
-				height: 100%;
-				left: 0px;
-				top: 0px;
-				position: absolute;
-			}
+	.banner {
+		width: 100vw;
+		height: 680px;
+		position: relative;
+		iframe {
+			width: 100%;
+			height: 100%;
+			border: none;
 		}
+		&:after {
+			content: '';
+			display: block;
+			width: 100%;
+			height: 100%;
+			left: 0px;
+			top: 0px;
+			position: absolute;
+		}
+	}
+	.container.full {
 		.title {
 			padding: 60px 0px;
 			.zh {
@@ -133,7 +135,7 @@ export default {
 						content: '';
 						width: 57px;
 						height: 26px;
-						background-image: url('http://39.98.56.58:8080/SunlueCMS/demo/template/images/cloud2.png');
+						background-image: url('http://39.98.56.58:8080/demo/template/images/cloud2.png');
 						top: 0;
 						right: -67px;
 					}

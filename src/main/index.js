@@ -46,7 +46,7 @@ const createWindow = function() {
 		BrowserWindowOption['movable'] = false
 		BrowserWindowOption['frame'] = false
 		BrowserWindowOption['kiosk'] = true
-		BrowserWindowOption['alwaysOnTop'] = true
+		// BrowserWindowOption['alwaysOnTop'] = true
 	}
 
 	mainWindow = new BrowserWindow(BrowserWindowOption)
@@ -121,12 +121,13 @@ const ipcAutoStart = function() {
 import {
 	autoUpdater
 } from 'electron-updater'
+let updateEvent
 const ipcAppUpdate=function(){
 	let message = {
 		error: '检查更新出错',
 		checking: '正在检查更新……',
 		updateAva: '检测到新版本，正在下载……',
-		updateNotAva: '现在使用的就是最新版本，不用更新',
+		updateNotAva: '当前是最新版本，不用更新',
 	};
 	
 	const uploadUrl = pkg.build.publish[0]['url']; // 下载地址，不加后面的**.exe
@@ -134,31 +135,41 @@ const ipcAppUpdate=function(){
 	
 	//当更新发生错误的时候触发
 	autoUpdater.on('error', function(error) {
-		console.log('更新错误');
-		mainWindow.webContents.send('updateMessage', message.error)
+		console.log('更新错误：'+ message.error);
+		updateEvent.sender.send('updateMessage', {
+			msg:error
+		})
 	});
 	
 	//当开始检查更新的时候触发
 	autoUpdater.on('checking-for-update', function() {
-		console.log('更新错误');
-		mainWindow.webContents.send('updateMessage', message.checking)
+		console.log('检查更新：'+ message.checking);
+		updateEvent.sender.send('updateMessage', {
+			msg:message.checking
+		})
 	});
 	
 	//当发现一个可用更新的时候触发，更新包下载会自动开始。
 	autoUpdater.on('update-available', function(info) {
-		console.log('发现更新');
-		mainWindow.webContents.send('updateMessage', message.updateAva)
+		console.log('发现更新：'+ message.updateAva);
+		updateEvent.sender.send('updateMessage', {
+			info:info,
+			msg:message.updateAva
+		})
 	});
 	
 	//当没有可用更新的时候触发
 	autoUpdater.on('update-not-available', function(info) {
-		console.log('没有更新');
-		mainWindow.webContents.send('updateMessage', message.updateNotAva)
+		console.log('没有更新:'+message.updateNotAva);
+		updateEvent.sender.send('updateMessage', {
+			info:info,
+			msg:message.updateNotAva
+		})
 	});
 	
 	// 更新下载进度事件
 	autoUpdater.on('download-progress', function(progressObj) {
-		mainWindow.webContents.send('downloadProgress', progressObj)
+		updateEvent.sender.send('downloadProgress', progressObj)
 	})
 	
 	//更新下载完成
@@ -170,10 +181,11 @@ const ipcAppUpdate=function(){
 			autoUpdater.quitAndInstall();
 		});
 	
-		mainWindow.webContents.send('isUpdateNow')
+		updateEvent.sender.send('isUpdateNow')
 	});
 	
 	ipcMain.on('checkUpdate',function(event, arg){
+		updateEvent=event
 		console.log("更新检查");
 		//执行自动更新检查
 		autoUpdater.checkForUpdates();

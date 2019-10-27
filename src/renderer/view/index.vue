@@ -67,61 +67,61 @@ export default {
 				item: [
 					{
 						type: 'animated',
-						img: 'http://39.98.56.58:8080/SunlueCMS/demo/template/img/homeBanner1.jpg',
+						img: 'http://39.98.56.58:8080/demo/template/img/homeBanner1.jpg',
 						imgText: [
 							{
-								img: 'http://39.98.56.58:8080/SunlueCMS/demo/template/img/homeBanner1Text.png'
+								img: 'http://39.98.56.58:8080/demo/template/img/homeBanner1Text.png'
 							}
 						]
 					},
 					{
 						type: 'box',
-						img: 'http://39.98.56.58:8080/SunlueCMS/demo/template/img/homeBanner2.jpg',
+						img: 'http://39.98.56.58:8080/demo/template/img/homeBanner2.jpg',
 						imgText: [
 							{
-								img: 'http://39.98.56.58:8080/SunlueCMS/demo/template/img/homeBanner2Text2.png'
+								img: 'http://39.98.56.58:8080/demo/template/img/homeBanner2Text2.png'
 							},
 							{
-								img: 'http://39.98.56.58:8080/SunlueCMS/demo/template/img/homeBanner2Text1.png'
+								img: 'http://39.98.56.58:8080/demo/template/img/homeBanner2Text1.png'
 							}
 						]
 					},
 					{
 						type: 'box',
-						img: 'http://39.98.56.58:8080/SunlueCMS/demo/template/img/homeBanner3.jpg',
+						img: 'http://39.98.56.58:8080/demo/template/img/homeBanner3.jpg',
 						imgText: [
 							{
-								img: 'http://39.98.56.58:8080/SunlueCMS/demo/template/img/homeBanner3Text1.png'
+								img: 'http://39.98.56.58:8080/demo/template/img/homeBanner3Text1.png'
 							},
 							{
-								img: 'http://39.98.56.58:8080/SunlueCMS/demo/template/img/homeBanner3Text2.png'
+								img: 'http://39.98.56.58:8080/demo/template/img/homeBanner3Text2.png'
 							}
 						]
 					},
 					{
 						type: 'box',
-						img: 'http://39.98.56.58:8080/SunlueCMS/demo/template/img/homeBanner4.jpg',
+						img: 'http://39.98.56.58:8080/demo/template/img/homeBanner4.jpg',
 						imgText: [
 							{
-								img: 'http://39.98.56.58:8080/SunlueCMS/demo/template/img/homeBanner4Text1.png'
+								img: 'http://39.98.56.58:8080/demo/template/img/homeBanner4Text1.png'
 							},
 							{
-								img: 'http://39.98.56.58:8080/SunlueCMS/demo/template/img/homeBanner4Text2.png'
+								img: 'http://39.98.56.58:8080/demo/template/img/homeBanner4Text2.png'
 							},
 							{
-								img: 'http://39.98.56.58:8080/SunlueCMS/demo/template/img/homeBanner4Text3.png'
+								img: 'http://39.98.56.58:8080/demo/template/img/homeBanner4Text3.png'
 							}
 						]
 					},
 					{
 						type: 'box',
-						img: 'http://39.98.56.58:8080/SunlueCMS/demo/template/img/homeBanner5.jpg',
+						img: 'http://39.98.56.58:8080/demo/template/img/homeBanner5.jpg',
 						imgText: [
 							{
-								img: 'http://39.98.56.58:8080/SunlueCMS/demo/template/img/homeBanner5Text1.png'
+								img: 'http://39.98.56.58:8080/demo/template/img/homeBanner5Text1.png'
 							},
 							{
-								img: 'http://39.98.56.58:8080/SunlueCMS/demo/template/img/homeBanner5Text2.png'
+								img: 'http://39.98.56.58:8080/demo/template/img/homeBanner5Text2.png'
 							}
 						]
 					}

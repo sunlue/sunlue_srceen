@@ -28,7 +28,7 @@
 		"publish": [
 			{
 				"provider": "generic",
-				"url": "http://www.sunlue.com/srceec/update"
+				"url": "http://electron.server.sunlue.cn/"
 			}
 		],
 		"files": [
@@ -50,15 +50,18 @@
 			]
 		},
 		"mac": {
-			"icon": "build/icons/icon.icns"
+			"icon": "build/icons/icon.icns",
+			"artifactName": "${productName}_setup_${version}.${ext}"
 		},
 		"win": {
 			"icon": "build/icons/icon.ico",
 			"requestedExecutionLevel": "highestAvailable",
-			"target": "nsis"
+			"target": "nsis",
+			"artifactName": "${productName}_setup_${version}.${ext}"
 		},
 		"linux": {
-			"icon": "build/icons"
+			"icon": "build/icons",
+			"artifactName": "${productName}_setup_${version}.${ext}"
 		},
 		"nsis": {
 			"oneClick": false,
@@ -73,6 +76,7 @@
 		"v-viewer": "^1.4.2",
 		"vue": "^2.5.16",
 		"vue-awesome-swiper": "^3.1.3",
+		"vue-devtools": "^5.1.3",
 		"vue-echarts": "^4.0.4",
 		"vue-electron": "^1.0.6",
 		"vue-router": "^3.0.1",

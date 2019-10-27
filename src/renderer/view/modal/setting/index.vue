@@ -114,8 +114,10 @@
 					<div class="item">
 						<label>版本信息</label>
 						<div class="label-text">
-							<span>V0.0.1</span>
-							<button v-on:click="update">检查更新</button>
+							<span>V{{appUpdate.version}}</span>
+							<span v-if="appUpdate.message!=''">{{appUpdate.message}}</span>
+							<button v-on:click="update" v-if="appUpdate.state=='check'">检查更新</button>
+							<button v-on:click="update" v-if="appUpdate.state=='yes'">开始更新</button>
 						</div>
 					</div>
 					<div class="item">
@@ -135,10 +137,18 @@
 <script>
 /*eslint-disable*/
 const electron = require('electron');
+
+import pkg from '../../../../../package.json'
+console.log(pkg)
 export default {
 	data() {
 		return {
 			autoStart: true,
+			appUpdate:{
+				state:'check',
+				message:'',
+				version:pkg.version
+			},
 			version: process.versions,
 			tabItem: [
 				{
@@ -168,8 +178,11 @@ export default {
 				that.autoStart = state;
 			});
 		});
-		electron.ipcRenderer.on('updateMessage', function(event, state) {
-			console.log(state)
+		electron.ipcRenderer.on('updateMessage', function(event, result) {
+			console.log(result.msg)
+			that.$nextTick(function() {
+				that.appUpdate.message = result.msg;
+			});
 		});
 		electron.ipcRenderer.send('checkAutoStart');
 	},

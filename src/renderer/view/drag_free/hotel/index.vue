@@ -46,7 +46,7 @@ export default {
 		return {
 			banner: {
 				background: {
-					src: 'http://39.98.56.58:8080/SunlueCMS/demo/upload/2019-09-26/15694892652472c9a578d6d6c0b01306016d6cd9a25f10d8.jpg',
+					src: 'http://39.98.56.58:8080/demo/upload/2019-09-26/15694892652472c9a578d6d6c0b01306016d6cd9a25f10d8.jpg',
 					alt: ''
 				},
 				title: ['畅行', '景区'],
@@ -56,14 +56,14 @@ export default {
 			items: [
 				{
 					name: '眉山兰溪·金熙温泉酒店',
-					img: 'http://39.98.56.58:8080/SunlueCMS/demo/upload/2019-09-26/15694859224502c9a578d6d6c0b01371016d6ca6a0920c06.png',
+					img: 'http://39.98.56.58:8080/demo/upload/2019-09-26/15694859224502c9a578d6d6c0b01371016d6ca6a0920c06.png',
 					intro: '​眉山兰溪·金熙温泉酒店(TulipInnLanXiHotSpring)，是由四川云溪置业有限公司倾力打造的国际性轻奢酒店，',
 					phone: '028-38713333',
 					address: '眉山东坡区岷东新区富牛大道南段5号江山美墅内'
 				},
 				{
 					name: '眉山岷江东湖饭店',
-					img: 'http://39.98.56.58:8080/SunlueCMS/demo/upload/2019-09-26/15694855838092c9a578d6d6c0b01112016d6ca175c10b79.png',
+					img: 'http://39.98.56.58:8080/demo/upload/2019-09-26/15694855838092c9a578d6d6c0b01112016d6ca175c10b79.png',
 					intro: '​眉山岷江东湖饭店位于眉山市区，南枕岷江，北临东坡湖，占地175000平方米，建筑面积46000平方米，距成都、乐山、峨眉均30分钟车程，交通十分便捷。',
 					phone: '028-38713333',
 					address: '眉山 东坡区 环岛路1号（东坡城市湿地公园旁边）'

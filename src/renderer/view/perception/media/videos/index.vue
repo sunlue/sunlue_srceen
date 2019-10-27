@@ -33,8 +33,8 @@ export default {
 				{
 					name: '眉山旅游宣传',
 					play: 58,
-					src: 'http://39.98.56.58:8080/SunlueCMS/demo/video/2019-09-27/15695480429662c9a578d6d6c0b01538016d705a82d61fee.mp4',
-					thumb: 'http://39.98.56.58:8080/SunlueCMS/demo/upload/2019-09-27/15695510215752c9a578d6d6c0b01379016d7087f6072251.png'
+					src: 'http://39.98.56.58:8080/demo/video/2019-09-27/15695480429662c9a578d6d6c0b01538016d705a82d61fee.mp4',
+					thumb: 'http://39.98.56.58:8080/demo/upload/2019-09-27/15695510215752c9a578d6d6c0b01379016d7087f6072251.png'
 				}
 			],
 			video: {

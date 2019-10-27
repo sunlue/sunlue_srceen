@@ -70,7 +70,7 @@ export default {
 		return {
 			intro_bar: true,
 			banner_items: {
-				background: 'http://39.98.56.58:8080/SunlueCMS/demo/upload/2019-09-26/15694873365592c9a578d6d6c0b0157016d6cbc346f0e37.jpg',
+				background: 'http://39.98.56.58:8080/demo/upload/2019-09-26/15694873365592c9a578d6d6c0b0157016d6cbc346f0e37.jpg',
 				title: ['景区', '乐购'],
 				title_en: 'Enjoy shopping in the scenic area',
 				describe:

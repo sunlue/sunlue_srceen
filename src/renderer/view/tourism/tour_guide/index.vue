@@ -42,7 +42,7 @@ export default {
 		return {
 			banner: {
 				background: {
-					src: 'http://39.98.56.58:8080/SunlueCMS/demo/template/images/perceptionBannerBg.jpg',
+					src: 'http://39.98.56.58:8080/demo/template/images/perceptionBannerBg.jpg',
 					alt: ''
 				},
 				title: ['智游', '景区'],
@@ -121,7 +121,7 @@ export default {
 					content: '';
 					width: 57px;
 					height: 26px;
-					background-image: url('http://39.98.56.58:8080/SunlueCMS/demo/template/images/cloud2.png');
+					background-image: url('http://39.98.56.58:8080/demo/template/images/cloud2.png');
 					top: 0;
 					right: -67px;
 				}

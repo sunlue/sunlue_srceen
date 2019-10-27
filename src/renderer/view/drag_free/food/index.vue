@@ -42,7 +42,7 @@ export default {
 		return {
 			banner: {
 				background: {
-					src: 'http://39.98.56.58:8080/SunlueCMS/demo/upload/2019-09-26/15694891389812c9a578d6d6c0b01898016d6cd7b52510ba.jpg',
+					src: 'http://39.98.56.58:8080/demo/upload/2019-09-26/15694891389812c9a578d6d6c0b01898016d6cd7b52510ba.jpg',
 					alt: ''
 				},
 				title: ['畅行', '景区'],
@@ -51,27 +51,27 @@ export default {
 			items: [
 				{
 					name: '东坡肘子',
-					photo: 'http://39.98.56.58:8080/SunlueCMS/demo/upload/2019-09-26/15694907593872c9a578d6d6c0b01683016d6cf06edb1370.jpg',
+					photo: 'http://39.98.56.58:8080/demo/upload/2019-09-26/15694907593872c9a578d6d6c0b01683016d6cf06edb1370.jpg',
 					intro: '东坡肘子、东坡烤鸭、东坡宴、东坡泡菜、东坡鱼、东坡肉、龙眼酥、广济水蜜桃、青菜圆子、原汤牛肉、肥肠鱼、九大碗、东坡春见。'
 				},
 				{
 					name: '东坡烤鸭',
-					photo: 'http://39.98.56.58:8080/SunlueCMS/demo/upload/2019-09-26/15694917489032c9a578d6d6c0b01280016d6cff882714e5.jpg',
+					photo: 'http://39.98.56.58:8080/demo/upload/2019-09-26/15694917489032c9a578d6d6c0b01280016d6cff882714e5.jpg',
 					intro: '东坡肘子、东坡烤鸭、东坡宴、东坡泡菜、东坡鱼、东坡肉、龙眼酥、广济水蜜桃、青菜圆子、原汤牛肉、肥肠鱼、九大碗、东坡春见。'
 				},
 				{
 					name: '东坡宴',
-					photo: 'http://39.98.56.58:8080/SunlueCMS/demo/upload/2019-09-26/15694922059662c9a578d6d6c0b01836016d6d06818e155b.jpg',
+					photo: 'http://39.98.56.58:8080/demo/upload/2019-09-26/15694922059662c9a578d6d6c0b01836016d6d06818e155b.jpg',
 					intro: '东坡肘子、东坡烤鸭、东坡宴、东坡泡菜、东坡鱼、东坡肉、龙眼酥、广济水蜜桃、青菜圆子、原汤牛肉、肥肠鱼、九大碗、东坡春见。'
 				},
 				{
 					name: '东坡泡菜',
-					photo: 'http://39.98.56.58:8080/SunlueCMS/demo/upload/2019-09-26/15694930099342c9a578d6d6c0b01331016d6d12c60e1622.jpg',
+					photo: 'http://39.98.56.58:8080/demo/upload/2019-09-26/15694930099342c9a578d6d6c0b01331016d6d12c60e1622.jpg',
 					intro: '东坡肘子、东坡烤鸭、东坡宴、东坡泡菜、东坡鱼、东坡肉、龙眼酥、广济水蜜桃、青菜圆子、原汤牛肉、肥肠鱼、九大碗、东坡春见。'
 				},
 				{
 					name: '东坡鱼',
-					photo: 'http://39.98.56.58:8080/SunlueCMS/demo/upload/2019-09-26/15694938425592c9a578d6d6c0b01428016d6d1f7a7f174f.jpg',
+					photo: 'http://39.98.56.58:8080/demo/upload/2019-09-26/15694938425592c9a578d6d6c0b01428016d6d1f7a7f174f.jpg',
 					intro: '东坡肘子、东坡烤鸭、东坡宴、东坡泡菜、东坡鱼、东坡肉、龙眼酥、广济水蜜桃、青菜圆子、原汤牛肉、肥肠鱼、九大碗、东坡春见。'
 				}
 			],
@@ -103,7 +103,7 @@ export default {
 					content: '';
 					width: 57px;
 					height: 26px;
-					background-image: url('http://39.98.56.58:8080/SunlueCMS/demo/template/images/cloud2.png');
+					background-image: url('http://39.98.56.58:8080/demo/template/images/cloud2.png');
 					top: 0;
 					right: -67px;
 				}

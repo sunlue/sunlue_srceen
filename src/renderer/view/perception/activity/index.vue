@@ -41,7 +41,7 @@ export default {
 	data() {
 		return {
 			banner_items: {
-				background: 'http://39.98.56.58:8080/SunlueCMS/demo/upload/2019-09-26/15694886275912c9a578d6d6c0b01335016d6ccfe7870fba.jpg',
+				background: 'http://39.98.56.58:8080/demo/upload/2019-09-26/15694886275912c9a578d6d6c0b01335016d6ccfe7870fba.jpg',
 				title: ['特色', '活动'],
 				title_en: 'Special events',
 				describe: '大文豪苏东坡的故乡，山川秀美、风光旖旎，位于大峨眉旅游圈内，是最佳生态康养旅游目的地'
@@ -49,7 +49,7 @@ export default {
 			box_items: [
 				{
 					name: '中国竹文化节',
-					img: 'http://39.98.56.58:8080/SunlueCMS/demo/upload/2019-09-26/15694904407782c9a578d6d6c0b01196016d6ceb924a1292.jpg',
+					img: 'http://39.98.56.58:8080/demo/upload/2019-09-26/15694904407782c9a578d6d6c0b01196016d6ceb924a1292.jpg',
 					intro:
 						'眉山是东坡故里，享有“千载诗书城”的美誉，竹文化底蕴深厚，与东坡文化交相辉映、融合发展。眉山' +
 						'市青神县是文化部命名的“中国竹编艺术之乡”，被中国竹产业协会、国家林业局国际竹藤中心授予“中国' +
@@ -58,7 +58,7 @@ export default {
 				},
 				{
 					name: '东坡泡菜文化节',
-					img: 'http://39.98.56.58:8080/SunlueCMS/demo/upload/2019-09-26/15694902598412c9a578d6d6c0b01616016d6ce8cf811254.png',
+					img: 'http://39.98.56.58:8080/demo/upload/2019-09-26/15694902598412c9a578d6d6c0b01616016d6ce8cf811254.png',
 					intro:
 						'慕新海说，“东坡泡菜”拥有独一无二的地理优势、文化优势和生产工艺，凭借其低盐脆香的' +
 						'独特风味和绿色健康的营养价值，深受广大消费者的喜爱。今天的东坡泡菜，已走上了“两会”餐' +
@@ -69,7 +69,7 @@ export default {
 				},
 				{
 					name: '眉山樱花节',
-					img: 'http://39.98.56.58:8080/SunlueCMS/demo/upload/2019-09-26/15694897057782c9a578d6d6c0b01570016d6ce05b32117d.jpg',
+					img: 'http://39.98.56.58:8080/demo/upload/2019-09-26/15694897057782c9a578d6d6c0b01570016d6ce05b32117d.jpg',
 					intro: '眉山市持续推动绿色发展，生态旅游已成为眉山的又一新名片，占地820余亩的眉山樱花' + 
 					'博览园种植了中国红、阳光、关山、松月等樱花'
 				}
